@@ -29,11 +29,11 @@ function Fotter(props) {
                         </div>
                     </div>
                     <div className="col-md-4 col-sm-12">
-                        <div class="fb-page" data-href="https://www.facebook.com/hackarielu/" data-tabs="timeline"
+                        <div className="fb-page" data-href="https://www.facebook.com/hackarielu/" data-tabs="timeline"
                             data-width="300" data-height="200" data-small-header="true" data-adapt-container-width="true"
                             data-hide-cover="false" data-show-facepile="true">
                             <blockquote cite="https://www.facebook.com/hackarielu/"
-                                class="fb-xfbml-parse-ignore">
+                                className="fb-xfbml-parse-ignore">
                                 <a href="https://www.facebook.com/hackarielu/">
                                     Hack-AU
                                     </a>

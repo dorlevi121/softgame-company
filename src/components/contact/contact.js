@@ -22,7 +22,7 @@ function Contact(props) {
                     <div className="clearfix" />
                     <div className="col-md-offset-2 col-md-8 col-sm-12">
                         {/* CONTACT FORM HERE */}
-                        <form id="contact-form" action="php/contact.php" method="get" role="form">
+                        <form id="contact-form" action="php/contact.php" method="get">
                             {/* IF MAIL SENT SUCCESSFULLY */}
                             <h6 className="text-success">{text.magSuccsess[language]} </h6>
                             {/* IF MAIL SENDING UNSUCCESSFULL */}
