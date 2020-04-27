@@ -19,7 +19,7 @@ function Menu(props) {
             <li><a href="#team" className="smoothScroll">{text.menuAbout[language]}</a></li>
             <li><a href="#contact" className="smoothScroll">{text.menuContact[language]}</a></li>
             <li className="dropdown">
-              <a href="#" className="dropdown-btn">
+              <a href="/" className="dropdown-btn">
               {text.menuLanguage[language]}
                 </a>
               <div className="dropdown-content">

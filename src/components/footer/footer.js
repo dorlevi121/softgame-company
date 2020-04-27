@@ -1,7 +1,6 @@
 import React from 'react';
 import './footer.css';
 import * as text from '../../assets/language/language';
-import { FacebookProvider, Group } from 'react-facebook';
 
 function Fotter(props) {
     const language = props.language;
