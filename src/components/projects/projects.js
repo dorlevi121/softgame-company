@@ -16,7 +16,7 @@ function Projects(props) {
 
     return (
         <section id="project" className="parallax-section">
-            <div className="container" data-aos="fade-right">
+            <div className="container" data-aos="fade-left">
                 <h3 className="section-title">{text.titleProjects[language]}</h3>
 
                 <div className="row">
