@@ -1,0 +1,40 @@
+#about {
+    padding-top: 250px;
+    padding-bottom: 300px;
+  }
+  
+  .about-info h3 {
+    font-size: 20px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: 30px;
+    line-height: inherit;
+  }
+
+  #about {
+    padding-top: 150px;
+    padding-bottom: 130px;
+  }
+}
+
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .about-info h3 {
+    letter-spacing: 6px;
+  }
+
+}

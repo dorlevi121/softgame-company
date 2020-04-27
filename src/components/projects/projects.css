@@ -1,0 +1,91 @@
+.project-item {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.project-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#project h4 {
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  line-height: 32px;
+  padding-bottom: 30px;
+}
+
+.project-info {
+  padding: 12em 0;
+}
+
+.project-item img {
+  width: 550px;
+  height: 400px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+.project-item:hover img {
+  transform: scale(1.1);
+}
+
+.project-overlay h1 {
+  color: #ffffff;
+  margin: 0;
+}
+.project-overlay h3 {
+  color: #d9d9d9;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  margin-top: 0;
+}
+
+.project-item:hover .project-overlay {
+  opacity: 1;
+}
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: 30px;
+    line-height: inherit;
+  }
+
+  .project-info {
+    padding: 4em 0;
+  }
+}
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .project-info {
+    padding: 5em 0;
+  }
+
+  #project h4 {
+    letter-spacing: 6px;
+  }
+}
