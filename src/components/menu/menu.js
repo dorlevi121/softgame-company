@@ -19,12 +19,12 @@ function Menu(props) {
             <li><a href="#team" className="smoothScroll">{text.menuAbout[language]}</a></li>
             <li><a href="#contact" className="smoothScroll">{text.menuContact[language]}</a></li>
             <li className="dropdown">
-              <a href="/" className="dropdown-btn">
+              <a role="button" className="dropdown-btn">
               {text.menuLanguage[language]}
                 </a>
               <div className="dropdown-content">
-                <a onClick={()=>props.changeLanguage()} className="dropdown-item">עברית</a>
-                <a onClick={()=>props.changeLanguage()} className="dropdown-item">English</a>
+                <p onClick={()=>props.changeLanguage()} className="dropdown-item">עברית</p>
+                <p onClick={()=>props.changeLanguage()} className="dropdown-item">English</p>
               </div>
             </li>
 

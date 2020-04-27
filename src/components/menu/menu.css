@@ -47,8 +47,11 @@
 
  .dropdown-item{
   text-decoration: none !important; 
-  margin: 8px !important;
+  margin: 8px;
   display: block;
+  color: #f9f9f9;
+  cursor: pointer;
+  font-weight: 400;
   opacity: 1;
 }
 
