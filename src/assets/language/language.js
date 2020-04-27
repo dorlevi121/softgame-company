@@ -13,7 +13,8 @@ export const buttonHome = ['Discover More', 'מדיע נוסף'];
 
 
 // About
-export const contentAbout = ['We are a team of computer science graduates who have decided to take their love of technology one step further and realize our dream.', 'אנחנו צוות של מתכנתים בוגרי מדעי המחשב שהחליטו לקחת את אהבה שלהם לטכנולוגיה צעד אחד קדימה ולהגשים את החלום שלנו.'];
+export const contentAbout = ['We are a team of computer science graduates who have decided to take their love of technology one step further and realize our dream.', 
+'אנחנו צוות של מתכנתים בוגרי מדעי המחשב שהחליטו לקחת את אהבה שלהם לטכנולוגיה צעד אחד קדימה ולהגשים את החלום שלנו. לפרטים נוספים צרו איתנו קשר.'];
 export const titleAbout = ['About Us', 'קצת עלינו'];
 
 

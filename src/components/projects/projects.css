@@ -21,15 +21,14 @@
   transition: all ease-in-out 0.4s;
 }
 
-#project h4 {
-  font-size: 20px;
+#project h3 {
   letter-spacing: 12px;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
   font-weight: bold;
   line-height: 32px;
-  padding-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .project-info {
@@ -38,10 +37,33 @@
 
 .project-item img {
   width: 550px;
-  height: 400px;
+  height: 330px;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+  border-radius: 5px;
+  margin: auto !important;
 }
+
+.color-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.color-overlay:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background:rgb(#4dc47d);
+  background: #4dc47d;
+  background:rgba(#4dc47d,0.4);   
+  opacity: .2;      
+  z-index: 2;
+}
+
 .project-item:hover img {
   transform: scale(1.1);
 }
@@ -66,9 +88,8 @@
 -----------------------------------------*/
 
 @media (max-width: 980px) {
-  h1 {
-    font-size: 30px;
-    line-height: inherit;
+  h3 {
+    margin-bottom: 50px;
   }
 
   .project-info {

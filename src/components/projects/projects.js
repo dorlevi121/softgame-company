@@ -1,22 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './projects.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import * as text from '../../assets/language/language';
 
 function Projects(props) {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            offset: 200
+        })
+    }, []);
+
     const language = props.language;
 
     return (
         <section id="project" className="parallax-section">
-            <div className="container">
-            <h4>{text.titleProjects[language]}</h4>
+            <div className="container" data-aos="fade-right">
+                <h3 className="section-title">{text.titleProjects[language]}</h3>
 
                 <div className="row">
-                    
+
                     <div className="col-md-6 col-sm-6">
                         {/* PROJECT ITEM */}
                         <div className="project-item">
                             <a href="http://up419.siz.co.il/up3/jyhjtjtohynq.jpg" className="image-popup">
-                                <img src="http://up419.siz.co.il/up3/jyhjtjtohynq.jpg" className="img-responsive" alt="" />
+                                <div className="color-overlay">
+                                    <img src="http://up419.siz.co.il/up3/jyhjtjtohynq.jpg" className="img-responsive" alt="" />
+                                </div>
                                 <div className="project-overlay">
                                     <div className="project-info">
                                         <h1>{text.firstProject[language]}</h1>
@@ -29,8 +40,10 @@ function Projects(props) {
                     <div className="col-md-6 col-sm-6">
                         {/* PROJECT ITEM */}
                         <div className="project-item">
-                            <a href="https://user-images.githubusercontent.com/30637457/55686720-6ad28680-596d-11e9-94fd-d0a895bdcb55.jpg" className="image-popup">
-                                <img src="https://user-images.githubusercontent.com/30637457/55686720-6ad28680-596d-11e9-94fd-d0a895bdcb55.jpg" className="img-responsive" alt="" />
+                            <a href="http://up419.siz.co.il/up2/mxtmzywcwmre.png" className="image-popup">
+                                <div className="color-overlay">
+                                    <img src="http://up419.siz.co.il/up2/mxtmzywcwmre.png" className="img-responsive" alt="" />
+                                </div>
                                 <div className="project-overlay">
                                     <div className="project-info">
                                         <h1>{text.secProject[language]}</h1>
@@ -43,8 +56,10 @@ function Projects(props) {
                     <div className="col-md-6 col-sm-6">
                         {/* PROJECT ITEM */}
                         <div className="project-item">
-                            <a href="http://up419.siz.co.il/up2/jhlwycdynjzj.jpg" className="image-popup">
-                                <img src="http://up419.siz.co.il/up2/jhlwycdynjzj.jpg" className="img-responsive" alt="" />
+                            <a href="http://up419.siz.co.il/up3/ztjghnn2kmd1.png" className="image-popup">
+                                <div className="color-overlay">
+                                    <img src="http://up419.siz.co.il/up3/ztjghnn2kmd1.png" className="img-responsive" alt="" />
+                                </div>
                                 <div className="project-overlay">
                                     <div className="project-info">
                                         <h1>{text.thirdProject[language]}</h1>
@@ -57,8 +72,10 @@ function Projects(props) {
                     <div className="col-md-6 col-sm-6">
                         {/* PROJECT ITEM */}
                         <div className="project-item">
-                            <a href="assets/images/project-image4.jpg" className="image-popup">
-                                <img src="images/project-image4.jpg" className="img-responsive" alt="" />
+                            <a href="http://up419.siz.co.il/up2/qwcz1zmdnztq.png" className="image-popup">
+                                <div className="color-overlay">
+                                    <img src="http://up419.siz.co.il/up2/qwcz1zmdnztq.png" className="img-responsive" alt="" />
+                                </div>
                                 <div className="project-overlay">
                                     <div className="project-info">
                                         <h1>{text.fourthProject[language]}</h1>

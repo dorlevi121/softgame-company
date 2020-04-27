@@ -1,8 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './contact.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import * as text from '../../assets/language/language';
 
 function Contact(props) {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            offset: 200
+        })
+    }, []);
+
     const language = props.language;
     const name = (
         <div className="col-md-6 col-sm-6">
@@ -12,7 +21,7 @@ function Contact(props) {
 
     return (
         <section id="contact" className="parallax-section">
-            <div className="container">
+            <div className="container" data-aos="fade">
                 <div className="row">
                     <div className="col-md-offset-3 col-md-6 col-sm-12">
                         <div className="section-title">
